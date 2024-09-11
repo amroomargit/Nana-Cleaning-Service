@@ -1,3 +1,6 @@
+/* Note from the programmer: This is my first time coding a website, so some of the comments I've made on bits of code which might seem obvious
+are for my learning purposes */
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -32,17 +35,13 @@
     padding: 0 50px;
 }
 
-#navbar_logo{
+#navbar__logo{
     align-items: center;
     cursor: pointer;
 }
 
 .logo_adjust{
     width:180px;
-}
-
-.fa-gem{
-    margin-right: 0.5rem;
 }
 
 .navbar__menu{
@@ -52,7 +51,7 @@
     text-align: center;
 }
 
-.navbar_item{
+.navbar__item{
     height: 80px;
 }
 
@@ -72,7 +71,7 @@
 }
 
 /*Adjusts screen for phone/tablet/minimized window compatability once at 960px screen width*/
-@media screen and (man-width: 960px){
+@media screen and (max-width: 960px){
     .navbar__container{
         display: flex;
         justify-content: space-between;
@@ -87,16 +86,18 @@
         display: grid;
         grid-template-columns: auto;
         margin: 0;
+        width: 100%;
         position: absolute;
         top: -1000px;
         opacity: 0;
         transition: all 0.5s ease;
         height: 50vh;
         z-index: -1;
+        background: #b9dcdf;
     }
 
     .navbar__menu.active{
-        background: #b9dcdf;;
+        background: #b9dcdf;
         top: 100%;
         opacity: 1;
         transition: all 0.5s ease;

@@ -1,3 +1,6 @@
+<!--Note from the programmer: This is my first time coding a website, so some of the comments I've made on bits of code which might seem obvious
+are for my learning purposes-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,16 +8,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nana Cleaning Services LTD</title>
     <link rel="stylesheet" href="styles.css">
+
+    <!--Font import-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar">
         <div class="navbar__container">
-            <a href="index.html" id="navbar_logo"> <!-- Made it so that there's no home button, clicking on the logo takes you home instead-->
+            <a href="index.html" id="navbar__logo"> <!-- Made it so that there's no home link, clicking on the logo takes you home instead-->
                 <img class="logo_adjust"src="images/Nana logo.png" alt="Company Logo">
             </a>
+
+            <!--The actual code used to implement the menu items-->
             <div class="navbar__toggle" id="mobile-menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -22,8 +29,7 @@
                 <span class="bar"></span>
             </div>
             <ul class="navbar__menu">
-
-                <!-- links in the nav bar to each of the pages (.html files)-->
+                <!-- adding link functionality to the menu items implemented above-->
                 <li class="navbar__item">
                     <a href="services.html" class="navbar__links">Services </a>
                 </li>
@@ -38,6 +44,9 @@
                 </li>
             </ul>
         </div>
-    </nav>  
+    </nav>
+
+    <!--So we can connect the javascript code to the html code -->  
+    <script>src="app.js"</script>
 </body>
 </html>

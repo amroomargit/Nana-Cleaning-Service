@@ -2,12 +2,15 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 26px;
 }
 
 /*adjusting & styling the nav bar so that it appears horizontally at the top of the page*/
 .navbar{
-
+    background: #b9dcdf;
     height: 80px;
     display: flex;
     justify-content: center;
@@ -35,7 +38,7 @@
 }
 
 .logo_adjust{
-    width:200px;
+    width:180px;
 }
 
 .fa-gem{
@@ -54,17 +57,17 @@
 }
 
 .navbar__links{
-
+    color: #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    padding: 0 1rem;
+    padding: 0 2rem;
     height: 100%;
 }
 
 .navbar__links:hover{
-    color:#f77062;
+    color:#131313;
     transition: all 0.3s ease;
 }
 
@@ -93,7 +96,7 @@
     }
 
     .navbar__menu.active{
-        background: #131313;
+        background: #b9dcdf;;
         top: 100%;
         opacity: 1;
         transition: all 0.5s ease;
@@ -104,7 +107,6 @@
 
     #navbar__logo{
         padding-left:25px;
-    
     }
 
     .navbar__toggle .bar{
@@ -123,7 +125,7 @@
         text-align: center;
         padding: 2rem;
         width: 100%;
-        display: table;
+        display: table; 
     }
 
     #mobile-menu{
@@ -138,5 +140,15 @@
         cursor: pointer;
     }
 
-    
+    #mobile-menu.is-active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    #mobile-menu.is-active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    #mobile-menu.is-active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
 }

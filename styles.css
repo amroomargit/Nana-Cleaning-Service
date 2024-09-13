@@ -5,10 +5,10 @@ are for my learning purposes */
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: "Roboto", sans-serif;
+    font-family: "Concert One", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 26px;
+    font-size: 30px;
 }
 
 /*adjusting & styling the nav bar so that it appears horizontally at the top of the page*/
@@ -152,4 +152,67 @@ are for my learning purposes */
     #mobile-menu.is-active .bar:nth-child(3){
         transform: translateY(-8px) rotate(-45deg);
     }
+}
+
+/*Hero Stylization*/
+.smaller-font{
+    font-size: 18px;
+}
+
+.hero-style{
+    margin: 0;
+    font-family: "Concert One", sans-serif;
+    color: white;
+    background: #b9dcdf;
+}
+
+section{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 400px;
+    padding: 100px 20vw;
+}
+
+.blue-main{
+    background: #b9dcdf;
+}
+
+.blue-2{
+    background: #B9C9DF;
+}
+
+.blue-3{
+    background: #B9DFCF;
+}
+
+.curve{
+    position: absolute;
+    height: 225px;
+    width: 100%;
+    bottom: 0;
+}
+
+.curve::before{
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 55%;
+    height: 100%;
+    background-color: #B9C9DF;
+    transform: translate(85%, 60%);
+}
+
+.curve::after{
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 55%;
+    height: 100%;
+    background-color: #b9dcdf;
+    transform: translate(-4%, 40%);
+    z-index: -1;
 }

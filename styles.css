@@ -154,16 +154,12 @@ are for my learning purposes */
     }
 }
 
-/*Hero Stylization*/
-.smaller-font{
-    font-size: 18px;
-}
-
 .hero-style{
     margin: 0;
     font-family: "Concert One", sans-serif;
     color: white;
     background: #b9dcdf;
+    overflow-x: hidden;
 }
 
 section{
@@ -179,40 +175,39 @@ section{
     background: #b9dcdf;
 }
 
+.blue-main-text{
+    font-size: 80px;
+    margin: left;
+    width: 100%;
+}
+
+.smaller-font{
+    font-size: 18px;
+    margin: left;
+    width: 100%;
+}
+
 .blue-2{
-    background: #B9C9DF;
+    background: #c4d6ee;
 }
 
 .blue-3{
-    background: #B9DFCF;
+    background: #b9dcdf;
+    height: 300px;
 }
 
-.curve{
-    position: absolute;
-    height: 225px;
+.spacer{
+    aspect-ratio: 1920/400;
     width: 100%;
-    bottom: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
-.curve::before{
-    content: '';
-    display: block;
-    position: absolute;
-    border-radius: 100% 50%;
-    width: 55%;
-    height: 100%;
-    background-color: #B9C9DF;
-    transform: translate(85%, 60%);
+.layer1{
+    background-image: url(images/layered-waves-haikei.svg);
 }
 
-.curve::after{
-    content: '';
-    display: block;
-    position: absolute;
-    border-radius: 100% 50%;
-    width: 55%;
-    height: 100%;
-    background-color: #b9dcdf;
-    transform: translate(-4%, 40%);
-    z-index: -1;
+.layer2{
+    background-image: url(images/layered-waves-haikei-new-2.svg);
 }

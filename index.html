@@ -8,58 +8,17 @@ are for my learning purposes-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nana Cleaning Services LTD</title>
     <link rel="stylesheet" href="styles.css" />
-
-    <!--Font import-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap"
-      rel="stylesheet"
-    />
   </head>
 
   <body>
-    <nav class="navbar">
-      <div class="navbar__container">
-        <a href="index.html" id="navbar__logo">
-          <!-- Made it so that there's no home link, clicking on the logo takes you home instead-->
-          <img
-            class="logo_adjust"
-            src="images/Nana logo.png"
-            alt="Company Logo"
-          />
-        </a>
-
-        <!--The actual code used to implement the menu items-->
-        <div class="navbar__toggle" id="mobile-menu">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </div>
-        <ul class="navbar__menu">
-          <!-- adding link functionality to the menu items implemented above-->
-          <li class="navbar__item">
-            <a href="services.html" class="navbar__links">Services </a>
-          </li>
-          <li class="navbar__item">
-            <a href="service_regions.html" class="navbar__links"
-              >Service Regions
-            </a>
-          </li>
-          <li class="navbar__item">
-            <a href="contact.html" class="navbar__links">Contact </a>
-          </li>
-          <li class="navbar__item">
-            <a href="careers.html" class="navbar__links">Careers </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <!--Navbar code injection-->
+    <div id = 'navbar'></div>
+    <script src = "nav_insertion.js"></script>
 
     <!--Hero-->
     <div class="hero-style">
       <section class="blue-main">
+        <h1>Home</h1>
         <h1 class="blue-main-text">Call Or Text 519-697-8155</h1>
         <br />
         <br />
@@ -97,8 +56,6 @@ are for my learning purposes-->
     </div>
 
     <!--So we can connect the javascript code to the html code -->
-    <script>
-      src = "app.js";
-    </script>
+    <script src = "app.js"></script>
   </body>
 </html>

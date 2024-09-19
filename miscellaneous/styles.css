@@ -178,18 +178,6 @@ section{
     background: #b9dcdf;
 }
 
-/*.blue-main-text{
-    font-size: 80px;
-    margin: left;
-    width: 100%;
-}
-
-.smaller-font{
-    font-size: 18px;
-    margin: left;
-    width: 100%;
-}*/
-
 .blue-2{
     background: #c4d6ee;
 }
@@ -208,11 +196,11 @@ section{
 }
 
 .layer1{
-    background-image: url(images/layered-waves-haikei.svg);
+    background-image: url(../images/layered-waves-haikei.svg);
 }
 
 .layer2{
-    background-image: url(images/layered-waves-haikei-v5.svg);
+    background-image: url(../images/layered-waves-haikei-v5.svg);
 }
 
 /*Footer*/

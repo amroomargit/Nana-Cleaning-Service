@@ -69,12 +69,21 @@ are for my learning purposes */
 }
 
 .navbar__links:hover{
-    color:#131313;
+    color:#30696d;
     transition: all 0.3s ease;
 }
 
 /*Adjusts screen for phone/tablet/minimized window compatability once at 960px screen width*/
 @media screen and (max-width: 960px){
+    .navbar{
+        background-color: #b9dcdf;
+        transition: background-color all 0.2s ease;
+    }
+
+    .navbar.active{
+        background-color: #131313;
+    }
+
     .navbar__container{
         display: flex;
         justify-content: space-between;
@@ -91,19 +100,19 @@ are for my learning purposes */
         margin: 0;
         width: 100%;
         position: absolute;
-        top: -1000px;
+        top: -100px;
         opacity: 0;
         transition: all 0.5s ease;
         height: 50vh;
         z-index: -1;
-        background: #b9dcdf;
+        background: #131313;
     }
 
     .navbar__menu.active{
-        background: #b9dcdf;
+        background: #131313;
         top: 100%;
         opacity: 1;
-        transition: all 0.5s ease;
+        /*transition: all 0.5s ease;*/
         z-index: 99;
         height: 50vh;
         font-size: 1.6rem;
@@ -127,9 +136,10 @@ are for my learning purposes */
 
     .navbar__links{
         text-align: center;
-        padding: 2rem;
+        padding: 0.7rem;
         width: 100%;
         display: table; 
+        color: #b9dcdf;
     }
 
     #mobile-menu{

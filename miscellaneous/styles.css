@@ -75,9 +75,14 @@ are for my learning purposes */
 
 /*Adjusts screen for phone/tablet/minimized window compatability once at 960px screen width*/
 @media screen and (max-width: 960px){
+
+    #navbar__logo img{
+        transition: opacity 0.5s ease;
+    }
+
     .navbar{
         background-color: #b9dcdf;
-        transition: background-color all 0.2s ease;
+        transition: background-color all 0.5s ease;
     }
 
     .navbar.active{
@@ -192,11 +197,6 @@ section{
     background: #c4d6ee;
 }
 
-.blue-3{
-    background: #b9dcdf;
-    height: 300px;
-}
-
 .spacer{
     aspect-ratio: 1920/400;
     width: 100%;
@@ -205,12 +205,20 @@ section{
     background-size: cover;
 }
 
-.layer1{
+.waves_down_purple{
     background-image: url(../images/layered-waves-haikei.svg);
 }
 
-.layer2{
+.waves_up_purple{
     background-image: url(../images/layered-waves-haikei-v5.svg);
+}
+
+.waves_down_blue{
+    background-image: url(../images/layered-waves-haikei-opposite.svg);
+}
+
+.waves_up_blue{
+    background-image: url(../images/layered-waves-haikei-v5-opposite.svg);
 }
 
 /*Footer*/
@@ -269,7 +277,7 @@ section{
 }
 
 .footer__link--items a:hover{
-    color: #e9e9e9;
+    color: #30696d;
     transition: 0.3s ease-out;
 }
 

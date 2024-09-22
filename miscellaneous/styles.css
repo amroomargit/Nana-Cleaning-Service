@@ -355,3 +355,34 @@ section{
     }
 
 }
+
+.contact-info-banner{
+    background-color: #30696d;
+    padding: 4px 0;
+    text-align: center;
+    border-bottom: 3px solid white;
+}
+
+.contact-info{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin:0 auto;
+    padding: 0 20px;
+}
+
+.contact-info span{
+    font-size: 27px;
+    color: white;
+}
+
+@media (max-width: 768px){
+    .contact-info{
+        flex-direction: column;
+    }
+
+    .contact-info span{
+        margin-bottom: 5px;
+    }
+}

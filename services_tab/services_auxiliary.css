@@ -1,0 +1,48 @@
+.blue-main h1{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 2rem;
+    margin: 0;
+    border-bottom: 3px solid white;
+}
+
+.blue-main h2{
+    position: absolute;
+    top: 150px;
+    left: 60px;
+    font-size: 45px;
+}
+
+.blue-main ul{
+    position: absolute;
+    top: 220px;
+    left: 100px;
+}
+
+.blue-main li{
+    font-size: 35px;
+}
+
+.blue-main p{
+    position: absolute;
+    display: inline-block;
+    transform: rotate(357deg);
+    top: 110px;
+    left: 740px;
+    font-size: 45px;
+}
+
+.blue-main img{
+    width: 550px;
+    margin-left: 390px;
+    margin-top: -100px;
+}
+
+.blue-main a{
+    font-size: 45px;
+}
+
+#service-section-1{
+    min-height: 530px;
+}

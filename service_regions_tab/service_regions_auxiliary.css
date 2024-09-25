@@ -1,0 +1,60 @@
+.blue-main h1{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 2rem;
+    margin: 0;
+    border-bottom: 3px solid white;
+}
+
+.blue-main h2{
+    position: absolute;
+    top: 130px;
+    left: 50px;
+    font-size: 45px;
+}
+
+.columns{
+    display: flex;
+    justify-content: space-between;
+}
+
+.column-1{
+    position: absolute;
+    top: 198px;
+    left: 220px;
+}
+
+.column-2{
+    position: absolute;
+    top: 198px;
+    left: 520px;
+}
+
+.blue-main li{
+    font-size: 35px;
+}
+
+.blue-main{
+    min-height: 650px;
+}
+
+.blue-main img{
+    width: 510px;
+    margin-left: 750px;
+    margin-top: 90px;
+}
+
+.blue-main p{
+    position: absolute;
+    font-size: 45px;
+    top: 245px;
+    left: 910px;
+    display: inline-block;
+    transform: rotate(356deg);
+}
+
+.blue-main a{
+    position: absolute;
+    font-size: 45px;
+}

@@ -46,3 +46,11 @@
 #service-section-1{
     min-height: 530px;
 }
+
+.blue-2 h1{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 45px;
+}
+

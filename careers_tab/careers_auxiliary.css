@@ -5,22 +5,16 @@
 }
 
 .upload_button{
-    background-color: #4caf50;
+    background-color: #acb9b0;
     color: white;
-    border: none;
+    border: 3px solid white;
     cursor: pointer;
-    font-size: 16px;
-    border-radius: 5px;
+    font-size: 25px;
+    border-radius: 17px;
 }
 
 .upload_button:hover{
-    background-color: #45a049;
-}
-
-.error_msg{
-    color: red;
-    font-size: 14px;
-    margin-top: 10px;
+    background-color: #b9dcdf;
 }
 
 .blue-main h1{
@@ -37,4 +31,19 @@
     top: 150px;
     left: 60px;
     font-size: 25px;
+}
+
+.blue-main h2{
+    position: absolute;
+    top: 460px;
+    font-size: 35px;
+}
+
+.upload_container{
+    position: absolute;
+    top: 530px;
+}
+
+.blue-main{
+    min-height: 600px;
 }

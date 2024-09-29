@@ -47,3 +47,9 @@
 .blue-main{
     min-height: 600px;
 }
+
+.if_Successful{
+    color: green;
+    font-size: 18px;
+    margin-top: 10px;
+}

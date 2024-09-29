@@ -27,8 +27,11 @@ document.getElementById('pdf_Form').addEventListener('submit', function(event){
         .then(response => response.json())
         .then (data => {
             console.log('Success:', data);
+            const successMessage = document.getElementById('success');
+            successMessage.textContent = "Thank you! We have recieved your resume.";
+            successMessage.style.display = 'block';
         })
-
+        
         .catch(error => {
             console.error('Error:', error);
  

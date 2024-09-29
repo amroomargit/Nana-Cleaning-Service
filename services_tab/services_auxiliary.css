@@ -54,3 +54,56 @@
     font-size: 45px;
 }
 
+.blue-2 li{
+    font-size: 35px;
+}
+
+.speech_bubble_container{
+    position: relative;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.speech_bubble{
+    width: 100%;
+    max-width: 600px;
+}
+
+.speech_text{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    font-size: 2rem;
+    color: #000;
+}
+
+.speech_text a{
+    font-size: 2rem;
+    color: #30696d;
+    text-decoration: none;
+}
+
+@media (max-width: 768px){
+    .speech_text{
+        font-size: 1.5rem;
+    }
+
+    .speech_bubble{
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 480px){
+    .speech_text{
+        font-size: 1rem;
+    }
+
+    .speech_bubble{
+        max-width: 300px;
+    }
+}

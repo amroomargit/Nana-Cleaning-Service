@@ -10,18 +10,19 @@ are for my learning purposes-->
     <link rel="stylesheet" href="../miscellaneous/styles.css" />
     <link rel="stylesheet" href="services_auxiliary.css" />
     <!--fontawesome.com icons import-->
-    <script src="https://kit.fontawesome.com/935e0e3149.js" crossorigin="anonymous"></script>
-
-    
+    <script
+      src="https://kit.fontawesome.com/935e0e3149.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <!--Banner code injection-->
-    <div id = "banner"></div>
-    <script src = "../header_footer/banner_insertion.js"></script>
+    <div id="banner"></div>
+    <script src="../header_footer/banner_insertion.js"></script>
 
     <!--Navbar code injection-->
-    <div id = 'navbar'></div>
-    <script src = "../header_footer/nav_insertion.js"></script>
+    <div id="navbar"></div>
+    <script src="../header_footer/nav_insertion.js"></script>
 
     <!--Class names involve "hero" because this code is using the same css stylization as the hero section from the index.html file, sorry for the
     possibly improper naming convention-->
@@ -29,11 +30,11 @@ are for my learning purposes-->
       <section class="blue-main" id="service-section-1">
         <h1>Services</h1>
 
-        <br/>
+        <br />
 
         <h2>We Specialize In...</h2>
 
-        <br/>
+        <br />
 
         <ul>
           <li>Construction</li>
@@ -43,15 +44,18 @@ are for my learning purposes-->
           <li>Moving In/Out</li>
         </ul>
 
-        <img src="../images/speech-bubble-156056.svg" alt="An image of a speech bubble">
+        <div class="speech_bubble_container">
+          <img src="../images/speech-bubble-156056.svg" alt="An image of a speech bubble" class = "speech_bubble"/>
 
-        <p>Don't see what you<br>need cleaned on the <br> list? <a href="../contact_tab/contact.html"><br><br> Contact us to explore <br> options!</a></p>
+          <p class = "speech_text"> Don't see what you<br />need cleaned on the <br /> list? <a href="../contact_tab/contact.html"><br /><br /> Contact us to explore 
+            <br /> options!</a> </p>
+        </div>
 
       </section>
-      
+
       <div class="spacer waves_down_purple"></div>
 
-      <section class = "blue-2">
+      <section class="blue-2">
         <h1>Cleaning Checklist Template:</h1>
         <ul>
           <li>Windows (inside only; all mirrors and window ledges)</li>
@@ -59,7 +63,9 @@ are for my learning purposes-->
           <li>Microwaves & Dishwashers (inside and outside)</li>
           <li>Countertops and sinks</li>
           <li>Cupboards</li>
-          <li>Range hood (wipe down, top and underneath, wash filter if possible)</li>
+          <li>
+            Range hood (wipe down, top and underneath, wash filter if possible)
+          </li>
           <li>Tiles, tubs and toilets (including removal of mildew)</li>
           <li>Light fixtures and ceiling fans</li>
           <li>Removal of cobwebs</li>
@@ -75,16 +81,14 @@ are for my learning purposes-->
           <li>Office cleaning</li>
           <li>Apartment or home</li>
           <li>Carpet Steam</li>
-      </ul>
-      
+        </ul>
       </section>
 
-      <div class = "spacer waves_up_purple"></div>
+      <div class="spacer waves_up_purple"></div>
     </div>
 
     <!--Footer Code Insertion-->
     <div id="footer"></div>
     <script src="../header_footer/footer_insertion.js"></script>
-
   </body>
 </html>

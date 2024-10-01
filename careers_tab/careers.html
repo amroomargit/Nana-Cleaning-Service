@@ -9,12 +9,17 @@ are for my learning purposes-->
     <title>Nana Cleaning Services LTD</title>
     <link rel="stylesheet" href="../miscellaneous/styles.css" />
     <link rel="stylesheet" href="careers_auxiliary.css" />
+
     <!--fontawesome.com icons import-->
     <script
       src="https://kit.fontawesome.com/935e0e3149.js"
       crossorigin="anonymous"
     ></script>
+
+    <!--Google ReCaptcha API-->
+    <script src = "https://www.google.com/recaptcha/api.js?render=6Le4JVQqAAAAAClLPGpwn0ppTcjPsPxPRC70QMX1"></script>
   </head>
+
   <body>
     <!--Banner code injection-->
     <div id="banner"></div>
@@ -42,18 +47,23 @@ are for my learning purposes-->
       <h2>Submit Your CV to Join The Team!</h2>
 
       <!--pdf button-->
+      <form action = "nanacleaningservicesltd.azurewebsites.net/upload" id = "pdf_Form" method = "POST" enctype = "multipart/form-data">
         <div class="upload_container">
-          <label for="pdf_file" class="upload_button">
-            <pre> Select a .PDF file </pre></label
-          >
+          <label for="pdf_File" class="upload_button">
+            <pre> Select a .PDF file </pre>
+          </label>
           <input
             type="file"
-            id="pdf_file"
+            id="pdf_File"
             accept=".pdf"
             style="display: none"
           />
         </div>
+
+        <input type = "hidden" id = "g-recaptcha-response" name = "g-recaptcha-response" />
+
         <p id = "success" class = "if_Successful" style = "display: none;"></p>
+      </form>
     </section>
 
       <div class="spacer waves_up_blue"></div>
@@ -65,5 +75,8 @@ are for my learning purposes-->
     <!--Footer Code Insertion-->
     <div id="footer"></div>
     <script src="../header_footer/footer_insertion.js"></script>
+
+    <!--ReCaptcha v3-->
+    <script src = "reCaptchaScript.js"></script>
   </body>
 </html>

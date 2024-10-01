@@ -16,8 +16,15 @@ document.getElementById('pdf_Form').addEventListener('submit', function(event){
     const form_Data = new FormData();
     const file_Input = document.getElementById('pdf_File');
     const file = file_Input.files[0];
+    const recaptchaResponse = getcaptcha.getResponse();
+
+    if(!recaptchaResponse){
+        alert('reCaptcha incomplete');
+        return;
+    }
 
         form_Data.append('pdf_File', file);
+        form_Data.append('g-recaptcha-response', recaptchaResponse);
 
         fetch('/upload',{
             method: 'POST',

@@ -1,0 +1,26 @@
+.blue-main h1{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 2rem;
+    margin: 0;
+    border-bottom: 3px solid white;    
+}
+
+.greeting{
+    position: absolute;
+    top: 150px;
+    left: 60px;
+    font-size: 30px;
+}
+
+.blue-main{
+    min-height: 800px;
+}
+
+.info{
+    position: absolute;
+    top: 380px;
+    left: 1060px;
+    font-size: 30px;
+}

@@ -25,11 +25,11 @@
 }
 
 .blue-main p{
-    position: relative;
+    position: absolute;
     display: inline-block;
     transform: rotate(353deg);
-    top: -80px;
-    left: 290px;
+    top: 80px;
+    left: 720px;
     font-size: 45px;
     border: 15px solid white;
     padding: 30px;
@@ -50,14 +50,41 @@
     font-size: 45px;
 }
 
-@media (max-width: 768px){
+@media (max-width: 1280px){
+
     .blue-main p{
-        font-size: 30px;
-        top: 10px;
-        padding: 15px;
+        position: absolute;
+        display: inline-block;
+        transform: rotate(353deg);
+        top: 80px;
+        left: 520px;
+        font-size: 45px;
+        border: 15px solid white;
+        padding: 30px;
     }
 
     .blue-main a{
-        font-size: 30px;
+        font-size: 45px;
+    }
+}
+
+@media (max-width: 1080px){
+    #service-section-1{
+        min-height: 930px;
+    }
+
+    .blue-main p{
+        position: absolute;
+        display: inline-block;
+        transform: rotate(353deg);
+        top: 480px;
+        left: 60px;
+        font-size: 45px;
+        border: 15px solid white;
+        padding: 30px;
+    }
+
+    .blue-main a{
+        font-size: 45px;
     }
 }

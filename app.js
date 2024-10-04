@@ -34,3 +34,15 @@ app.post('/upload', (req, res) => {
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
+
+app.post('/submit-form',(req, res) => {
+    const { name, email, phone_number, message } = req.body;
+
+    console.log(`Name: ${name}, Email: ${email}, Phone Number: ${phone_number}, Message: ${message}`);
+
+    res.status(200).json({message: 'Form submitted successfully!'});
+});
+app.listen(PORT, () => {
+
+    console.log(`Server is running on port ${PORT}`);
+});

@@ -21,24 +21,57 @@
     <script src="../header_footer/nav_insertion.js"></script>
 
     <!--Hero-->
-    <!--Need all these class names because I can't just call .blue-main h1 in the css file since it'll affect all the corresponding headers. The 
-      sections are named similarily because I need certain colours to be the same, so I chose to just name each individual header/paragraph I need
-    to change specifically-->
     <div class="hero-style">
 
-      <!--
-
       <section class="blue-main">
-        <h1 class = "home-header-1">Home Page</h1>
-        <p class="home-para-1">CALL OR TEXT 519-697-8155 </br> </br> EMAIL said.omar23@hotmail.com</p>
+        <p class="home-para-1">WEBSITE STILL UNDER CONSTRUCTION, <br> PLEASE BEAR WITH ME UNTIL COMPLETION <br><br> THANK YOU FOR YOUR UNDERSTANDING</p>
       </section>
 
       <div class="spacer waves_down_purple"></div>
 
-      -->
-
       <section class="blue-2">
-        <h1>note to self, possibly place image slide show in here?</h1>
+
+        <div class="slider">
+          <div class="slides">
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+
+            <div class="slide first">
+              <img src="../images/placeholderimage1.jpg" alt="1">
+            </div>
+
+            <div class="slide">
+              <img src="../images/placeholderimage2.jpg" alt="2">
+            </div>
+
+            <div class="slide">
+              <img src="../images/placeholderimage3.jpg" alt="3">
+            </div>
+
+            <div class="slide">
+              <img src="../images/placeholderimage4.jpg" alt="4">
+            </div>
+
+            <div class="navigation-auto">
+              <div class="auto-btn1"></div>
+              <div class="auto-btn2"></div>
+              <div class="auto-btn3"></div>
+              <div class="auto-btn4"></div>
+            </div>
+
+          </div>
+
+          <div class="navigation-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+          </div>
+
+        </div>
+
       </section>
 
       <div class="spacer waves_up_purple"></div>
@@ -61,6 +94,9 @@
     <!--Footer Code Insertion-->
     <div id="footer"></div>
     <script src="../header_footer/footer_insertion.js"></script>
+
+    <!--Slide show code functionality insertion-->
+    <script src="slide_show_insertion.js"></script>
 
   </body>
 </html>

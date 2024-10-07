@@ -27,21 +27,15 @@
 }
 
 .careers_pitch{
-    position: absolute;
-    top: 150px;
-    left: 60px;
-    font-size: 25px;
+    font-size: 30px;
+    margin-top: 30px;
+    width: 150%;
 }
 
 .blue-main h2{
-    position: absolute;
-    top: 460px;
-    font-size: 35px;
-}
+    margin: 60px 0 15px 0;
 
-.upload_container{
-    position: absolute;
-    top: 530px;
+    font-size: 35px;
 }
 
 .blue-main{

@@ -1,6 +1,3 @@
-/* Note from the programmer: This is my first time coding a website, so some of the comments I've made on bits of code which might seem obvious
-are for my learning purposes */
-
 /*Directly importing the font into the css file instead of manually importing it into each of the html files*/
 @import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
 
@@ -74,7 +71,7 @@ are for my learning purposes */
 }
 
 /*Adjusts screen for phone/tablet/minimized window compatability once at 960px screen width*/
-@media screen and (max-width: 960px){
+@media screen and (max-width: 1120px){
 
     #navbar__logo img{
         transition: opacity 0.5s ease;

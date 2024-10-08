@@ -6,62 +6,66 @@
     <title>Nana Cleaning Services LTD</title>
     <link rel="stylesheet" href="../miscellaneous/styles.css" />
     <link rel="stylesheet" href="index_auxiliary.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
 
     <!--fontawesome.com icons import-->
-    <script src="https://kit.fontawesome.com/935e0e3149.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/935e0e3149.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
-    <!--Banner code injection-->
-    <div id = "banner"></div>
-    <script src = "../header_footer/banner_insertion.js"></script>
-
-    <!--Navbar code injection-->
+    <div id="banner"></div>
     <div id="navbar"></div>
-    <script src="../header_footer/nav_insertion.js"></script>
 
     <!--Hero-->
     <div class="hero-style">
-      
       <section class="blue-main">
         <h1 class="page-name">Home</h1>
-        <p class="home-para-1">Welcome to Nana Cleaning Services LTD! </p>
-        <p style="text-indent: 30px;" class="home-para-2">At Nana Cleaning Services, we take pride in delivering top-tier 
-          cleaning solutions tailored to meet your needs. Whether it's your home or business, 
-          our dedicated team ensures a spotless and inviting environment that you can truly enjoy. 
-          We believe that a clean space not only looks better, but feels better too. Let us take 
-          care of the cleaning, so you can focus on what matters most. Explore our services, and 
-          experience the difference of professional, reliable, and detailed care. </p>
+        <p class="home-para-1">Welcome to Nana Cleaning Services LTD!</p>
+        <p style="text-indent: 30px" class="home-para-2">
+          At Nana Cleaning Services, we take pride in delivering top-tier
+          cleaning solutions tailored to meet your needs. Whether it's your home
+          or business, our dedicated team ensures a spotless and inviting
+          environment that you can truly enjoy. We believe that a clean space
+          not only looks better, but feels better too. Let us take care of the
+          cleaning, so you can focus on what matters most. Explore our services,
+          and experience the difference of professional, reliable, and detailed
+          care.
+        </p>
       </section>
 
       <div class="spacer waves_down_purple"></div>
 
       <section class="blue-2">
-
         <h1 class="slider-caption">Take A Look at Some of Our Work!</h1>
 
         <!--Image Slider-->
         <div class="slider">
           <div class="slides">
-            <input type="radio" name="radio-btn" id="radio1">
-            <input type="radio" name="radio-btn" id="radio2">
-            <input type="radio" name="radio-btn" id="radio3">
-            <input type="radio" name="radio-btn" id="radio4">
+            <input type="radio" name="radio-btn" id="radio1" />
+            <input type="radio" name="radio-btn" id="radio2" />
+            <input type="radio" name="radio-btn" id="radio3" />
+            <input type="radio" name="radio-btn" id="radio4" />
 
             <div class="slide first">
-              <img src="../images/placeholderimage1.jpg" alt="1">
+              <img src="../images/placeholderimage1.jpg" alt="1" />
             </div>
 
             <div class="slide">
-              <img src="../images/placeholderimage2.jpg" alt="2">
+              <img src="../images/placeholderimage2.jpg" alt="2" />
             </div>
 
             <div class="slide">
-              <img src="../images/placeholderimage3.jpg" alt="3">
+              <img src="../images/placeholderimage3.jpg" alt="3" />
             </div>
 
             <div class="slide">
-              <img src="../images/placeholderimage4.jpg" alt="4">
+              <img src="../images/placeholderimage4.jpg" alt="4" />
             </div>
 
             <div class="navigation-auto">
@@ -70,7 +74,6 @@
               <div class="auto-btn3"></div>
               <div class="auto-btn4"></div>
             </div>
-
           </div>
 
           <div class="navigation-manual">
@@ -79,44 +82,111 @@
             <label for="radio2" class="manual-btn"></label>
             <label for="radio4" class="manual-btn"></label>
           </div>
-
         </div>
-
       </section>
 
       <div class="spacer waves_up_purple"></div>
 
       <section class="blue-main">
         <!--Customer Testimonials-->
-        <div id="page" class="site">
+        <div class="mini-body">
+          <div id="page" class="site">
+            <div class="container">
+              <div class="testi">
+                <div class="head">
+                  <h3>Testimonials.</h3>
+                  <p>See what people are saying..</p>
+                </div>
 
-          <div class="container">
-
-            <div class="testi">
-
-              <div class="head">
-                <h3>Testimonials.</h3>
-                <p>See what people are saying..</p>
-              </div>
-
-              <div class="body">
-                <ul>
-                  <li class="wrapper">
-                    <div class="thumbnail">
-                      <img src="../images/customer example 1.jpg" alt="">
-                    </div>
-                    <div class="aside">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim fuga veritatis provident vitae dignissimos rerum suscipit dolorum optio, veniam quisquam.</p>
-                      <div class="name">
-                        <h4>John Doe</h4>
-                        <p>Local Property Management Business Owner</p>
+                <div class="body swiper">
+                  <ul class="swiper-wrapper">
+                    <li class="swiper-slide">
+                      <div class="wrapper">
+                        <div class="thumbnail">
+                          <img src="../images/customer example 1.jpg" alt="" />
+                        </div>
+                        <div class="aside">
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Enim fuga veritatis provident vitae
+                            dignissimos rerum suscipit dolorum optio, veniam
+                            quisquam.
+                          </p>
+                          <div class="name">
+                            <h4>John Doe</h4>
+                            <p>Local Property Management Business Owner</p>
+                          </div>
+                        </div>
                       </div>
-                    </div>
-                  </li>
+                    </li>
 
-                </ul>
+                    <li class="swiper-slide">
+                      <div class="wrapper">
+                        <div class="thumbnail">
+                          <img src="../images/customer example 2.jpg" alt="" />
+                        </div>
+                        <div class="aside">
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Enim fuga veritatis provident vitae
+                            dignissimos rerum suscipit dolorum optio, veniam
+                            quisquam.
+                          </p>
+                          <div class="name">
+                            <h4>Jane Doe</h4>
+                            <p>Local Property Management Business Owner</p>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="swiper-slide">
+                      <div class="wrapper">
+                        <div class="thumbnail">
+                          <img src="../images/customer example 3.jpg" alt="" />
+                        </div>
+                        <div class="aside">
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Enim fuga veritatis provident vitae
+                            dignissimos rerum suscipit dolorum optio, veniam
+                            quisquam.
+                          </p>
+                          <div class="name">
+                            <h4>Joseph Doe</h4>
+                            <p>Local Property Management Business Owner</p>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="swiper-slide">
+                      <div class="wrapper">
+                        <div class="thumbnail">
+                          <img src="../images/customer example 4.jpg" alt="" />
+                        </div>
+                        <div class="aside">
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Enim fuga veritatis provident vitae
+                            dignissimos rerum suscipit dolorum optio, veniam
+                            quisquam.
+                          </p>
+                          <div class="name">
+                            <h4>Michael Doe</h4>
+                            <p>Local Property Management Business Owner</p>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="swiper-pagination"></div>
+
+                  <!-- If we need navigation buttons -->
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+                </div>
               </div>
-
             </div>
           </div>
         </div>
@@ -129,16 +199,23 @@
       </section>
 
       <div class="spacer waves_up_purple"></div>
-
-
     </div>
 
-    <!--Footer Code Insertion-->
-    <div id="footer"></div>
-    <script src="../header_footer/footer_insertion.js"></script>
+    <!--Banner code injection-->
+    <script src="../header_footer/banner_insertion.js"></script>
+
+    <!--Navbar code injection-->
+    <script src="../header_footer/nav_insertion.js"></script>
 
     <!--Slide show code functionality insertion-->
     <script src="slide_show_insertion.js"></script>
 
+    <!--Swiper JS Import and Injection-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="swiper.js"></script>
+
+    <!--Footer Code Insertion-->
+    <div id="footer"></div>
+    <script src="../header_footer/footer_insertion.js"></script>
   </body>
 </html>

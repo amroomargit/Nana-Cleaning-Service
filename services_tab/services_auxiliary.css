@@ -50,41 +50,74 @@
     font-size: 45px;
 }
 
-@media (max-width: 1280px){
+/*Note to self, media query retains past knowledge of changes made and works on from that, so you only need to restate whatever it is you wanna change with each query
+and the rest is taken care of*/
 
+@media (max-width: 1280px){
     .blue-main p{
-        position: absolute;
-        display: inline-block;
-        transform: rotate(353deg);
         top: 80px;
         left: 520px;
-        font-size: 45px;
-        border: 15px solid white;
-        padding: 30px;
-    }
-
-    .blue-main a{
-        font-size: 45px;
     }
 }
 
 @media (max-width: 1080px){
     #service-section-1{
-        min-height: 930px;
+        min-height: 830px;
     }
 
     .blue-main p{
-        position: absolute;
-        display: inline-block;
-        transform: rotate(353deg);
         top: 480px;
         left: 60px;
-        font-size: 45px;
-        border: 15px solid white;
-        padding: 30px;
+        font-size: 35px;
+        padding: 10px;
     }
 
     .blue-main a{
-        font-size: 45px;
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 604px){
+
+    .blue-2 h1{
+        font-size: 40px;
+    }
+
+    .blue-2 ul{
+        margin-top: 50px;
+    }
+}
+
+@media(max-width: 470px){
+
+    .blue-main p{
+        top: 480px;
+        left: 60px;
+        font-size: 30px;
+        border: 10px solid white;
+        padding: 10px;
+    }
+
+    .blue-main a{
+        font-size: 30px;
+    }
+    
+}
+
+@media(max-width: 428px){
+
+    .blue-main p{
+        top: 550px;
+        left: 30px;
+        font-size: 28px;
+        padding: 5px;
+    }
+
+    .blue-main a{
+        font-size: 28px;
+    }
+
+    .blue-main ul{
+        margin-top: 50px;
     }
 }

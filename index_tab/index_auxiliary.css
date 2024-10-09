@@ -132,8 +132,83 @@
     background: white;
 }
 
+/*Media Query*/
+
+@media(max-width: 828px){
+    .slider{
+        width: 600px;
+        height: 400px;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    .slide img{
+        width: 600px;
+        height: 400px;
+    }
+
+    .navigation-manual{
+        position: absolute;
+        width: 800px;
+        margin-top: -140px;
+        margin-left: -95px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .navigation-auto{
+        position: absolute;
+        display: flex;
+        width: 800px;
+        justify-content: center;
+        margin-left: -95px;
+        margin-top: 360px;
+    }
+}
+
+/*We have to trigger the 2nd media query for the image slider here because this is when the slider screen gets cut off, regardless of whatever 
+device you're on, because the prior media query of 828px would've held off till then*/
+@media(max-width: 598px){
+
+    /* sub 344px wide because we gotta make it smaller than the smallest phone*/
+    .slider{
+        width: 335px;
+        height: 200px;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    .slide img{
+        width: 335px;
+        height: 200px;
+    }
+
+    .navigation-manual{
+        position: absolute;
+        width: 800px;
+        margin-top: -330px;
+        margin-left: -230px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .navigation-auto{
+        position: absolute;
+        display: flex;
+        width: 800px;
+        justify-content: center;
+        margin-left: -230px;
+        margin-top: 170px;
+    }
+}
+
+
+
 
 /*Customer Testimonial*/
+
+#padding-issue{
+    padding: 0px;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root{
@@ -235,7 +310,7 @@
 }
 
 .testi .head h3{
-    font-size: 34px;
+    font-size: 44px;
     font-weight: 800;
 }
 
@@ -293,7 +368,7 @@
     font-weight: 800;
     line-height: 1;
     position: absolute;
-    color: var(--light-color);
+    color: var(--dark-color);
     height: 40px;
     z-index: -1;
 }
@@ -336,7 +411,7 @@
 }
 
 .testi :is(.swiper-button-next, .swiper-button-prev){
-    background-color: var(--light-color);
+    background-color: var(--dark-color);
     top: 35%;
     width: 38px;
     height: 38px;
@@ -360,7 +435,7 @@
 }
 
 .testi .swiper-pagination span{
-    background-color: var(--light-color);
+    background-color: var(--dark-color);
     transition: width .3s;
     opacity: 1;
 }

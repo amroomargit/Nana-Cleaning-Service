@@ -56,58 +56,139 @@
 
 @media (max-width: 1390px){
     .blue-main{
+        min-height: 1150px;
+    }
+
+    .blue-main p{
+        top: 650px;
+        left: 180px;
+    }
+}
+
+@media(max-width: 930px){
+    .blue-main{
         min-height: 1250px;
     }
 
     .blue-main p{
-        position: absolute;
-        display: inline-block;
-        transform: rotate(353deg);
-        top: 790px;
-        left: 180px;
-        font-size: 45px;
-        border: 15px solid white;
-        padding: 30px;
-    }
-
-    .blue-main a{
-        font-size: 45px;
+        top: 650px;
+        left: 20px;
     }
 }
 
-@media (max-width: 750px){
+@media (max-width: 756px){
     .blue-main{
-        min-height: 1200px;
+        min-height: 1110px;
     }
 
     .blue-main li{
         font-size: 32px;
     }
-
-    .column-1{
-        position: absolute;
-        top: 198px;
-        left: 120px;
-    }
     
     .column-2{
-        position: absolute;
         top: 198px;
         left: 420px;
     }
 
     .blue-main p{
-        position: absolute;
-        display: inline-block;
-        transform: rotate(353deg);
-        top: 730px;
-        left: 60px;
-        font-size: 45px;
-        border: 15px solid white;
-        padding: 30px;
+        top: 600px;
+        left: 20px;
+        font-size: 35px;
+        padding: 15px;
     }
 
     .blue-main a{
-        font-size: 45px;
+        font-size: 35px;
+    }
+}
+
+@media(max-width: 590px){
+    .column-1{
+        top: 198px;
+        left: 90px;
+    }
+
+    .column-2{
+        top: 198px;
+        left: 320px;
+    }    
+}
+
+@media(max-width: 521px){
+    .blue-main{
+        min-height: 1030px;
+    }
+
+    .column-1{
+        top: 198px;
+        left: 90px;
+    }
+
+    .column-2{
+        top: 198px;
+        left: 270px;
+    }
+
+    .blue-main li{
+        font-size: 25px;
+    }
+    
+    .blue-main p{
+        top: 520px;
+        left: 0px;
+        font-size: 30px;
+        padding: 10px;
+        border: 10px solid white;
+    }
+
+    .blue-main a{
+        font-size: 30px;
+    }
+}
+
+@media(max-width: 429px){
+    .blue-main{
+        min-height: 1100px;
+    }
+
+    .blue-main h1{
+        font-size: 1.7rem;
+    }
+
+    .blue-main h2{
+        top: 110px;
+        left: 40px;
+        font-size: 35px;
+    }
+
+    .column-1{
+        top: 168px;
+        left: 60px;
+    }
+
+    .column-2{
+        top: 168px;
+        left: 240px;
+    }
+}
+
+@media(max-width: 476px){
+    .blue-main h1{
+        font-size: 1.5rem;
+    }
+    .blue-main li{
+        font-size: 21px;
+    }
+
+    .column-1{
+        left: 60px;
+    }
+
+    .column-2{
+        left: 210px;
+    }
+
+    .blue-main p{
+        top: 450px;
     }
 }

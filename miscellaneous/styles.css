@@ -97,6 +97,7 @@
     }
 
     .navbar__menu{
+        pointer-events: none;
         display: grid;
         grid-template-columns: auto;
         margin: 0;
@@ -111,12 +112,13 @@
     }
 
     .navbar__menu.active{
+        pointer-events: auto;
         background: #131313;
         top: 100%;
         opacity: 1;
         /*transition: all 0.5s ease;*/
         z-index: 99;
-        height: 50vh;
+        height: auto;
         font-size: 1.6rem;
     }
 
@@ -216,6 +218,14 @@ section{
 
 .waves_up_blue{
     background-image: url(../images/layered-waves-haikei-v5-opposite.svg);
+}
+
+.special_up{
+    background-image: url(../images/special-up-2.svg);
+}
+
+.special_down{
+    background-image: url(../images/special-down.svg);
 }
 
 /*Footer*/

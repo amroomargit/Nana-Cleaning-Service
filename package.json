@@ -11,6 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.21.0",
+    "mssql": "^11.0.1",
     "passport-azure-ad": "^4.3.5",
     "passport-google-oauth20": "^2.0.0"
   }

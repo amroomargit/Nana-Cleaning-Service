@@ -2,4 +2,6 @@ node_modules/
 .env
 .jar
 .git
+Nana-Cleaning-Service.git.bfg-report
+"Nana Cleaning Service.bfg-report"
 dist/

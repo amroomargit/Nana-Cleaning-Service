@@ -1,40 +1,40 @@
-// Load environment variables
-require('dotenv').config();
+import dotenv from 'dotenv';
+dotenv.config();
 
 // Import dependencies
-const express = require('express');
-const bodyParser = require('body-parser');
-const sql = require('mssql');
+import express from 'express';
+import bodyParser from 'body-parser';
+import sql from 'mssql';
 
-//Initialize Express
+// Initialize Express
 const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-/*Database config*/
+// Database config
 const dbConfig = {
-  user: process.env.DB_USER, 
-  password: process.env.DB_PASSWORD, 
-  server: process.env.DB_SERVER, 
-  database: process.env.DB_NAME, 
+  user: process.env.DB_USER,
+  password: process.env.DB_PASSWORD,
+  server: process.env.DB_SERVER,
+  database: process.env.DB_NAME,
   options: {
-    encrypt: true, 
+    encrypt: true,
     trustServerCertificate: false
   }
 };
 
-//Route
+// Route
 app.post('/submit-form', async (req, res) => {
   const { name, email, phone_number, message } = req.body;
 
   try {
-    //database connect
+    // Connect to the database
     await sql.connect(dbConfig);
 
-    // Request object interact with database
+    // Create a request to interact with the database
     const request = new sql.Request();
 
-    // Call the stored procedure, pass form data as params
+    // Call the stored procedure, passing form data as parameters
     await request
       .input('name', sql.NChar(100), name)
       .input('email', sql.NChar(100), email)
@@ -42,7 +42,7 @@ app.post('/submit-form', async (req, res) => {
       .input('message', sql.NChar(500), message)
       .execute('InsertContactFormData');  // Call the stored procedure
 
-    // Send success response
+    // Send a success response
     res.send('Form submitted successfully!');
   } catch (err) {
     console.error('Error inserting data:', err);

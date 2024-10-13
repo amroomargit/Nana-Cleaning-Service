@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"no test specified\" && exit 0"
   },
@@ -10,6 +11,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.20.0",
+    "dotenv": "^10.0.0",
     "express": "^4.21.0",
     "mssql": "^11.0.1",
     "passport-azure-ad": "^4.3.5",

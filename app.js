@@ -1,8 +1,9 @@
-require('dotenv').config();
+import express from 'express';
+import bodyParser from 'body-parser';
+import sql from 'mssql';
+import dotenv from 'dotenv';
 
-const express = require('express');
-const bodyParser = require('body-parser');
-const sql = require('mssql');
+dotenv.config();
 
 const app = express();
 const port = process.env.PORT || 3000;

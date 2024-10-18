@@ -23,6 +23,7 @@ const config = {
 };
 
 app.post('/submit-form', async (req, res) => {
+  const { name, email, phone_number, message } = req.body;
   
   try{
     await sql.connect(config);

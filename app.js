@@ -2,9 +2,12 @@ import express from 'express';
 import bodyParser from 'body-parser';
 import sql from 'mssql';
 import dotenv from 'dotenv';
+import cors from 'cors';
+
 
 dotenv.config();
 
+app.use(cors());
 const app = express();
 const port = process.env.PORT || 3000;
 

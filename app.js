@@ -37,6 +37,8 @@ const config = {
 
 app.post('/submit-form', async (req, res) => {
   const { name, email, phone_number, message } = req.body;
+
+  appInsights.defaultClient.trackEvent({ name: "ContactFormSubmitted", properties: { name, email, phone_number } });
   
   try{
     await sql.connect(config);
@@ -45,6 +47,7 @@ app.post('/submit-form', async (req, res) => {
     res.send('Form submitted successfully!');
   }
   catch(err){
+    appInsights.defaultClient.trackException({ exception: error });
     console.error(err);
     res.status(500).send('Error saving data to the database.');
   }

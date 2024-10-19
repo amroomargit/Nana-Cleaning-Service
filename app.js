@@ -5,6 +5,16 @@ import dotenv from 'dotenv';
 import cors from 'cors';
 
 
+import appInsights from 'applicationinsights';
+
+appInsights
+  .setup(process.env.APPINSIGHTS_INSTRUMENTATIONKEY)
+  .setAutoCollectConsole(true)
+  .setAutoCollectExceptions(true)
+  .setAutoCollectPerformance(true)
+  .start();
+
+
 dotenv.config();
 
 app.use(cors());

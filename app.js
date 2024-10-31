@@ -35,7 +35,7 @@ const config = {
   },
 };
 
-app.post('/contact_tab/submit-form', async (req, res) => {
+app.post('/contact_tab/contact.html', async (req, res) => {
   const { name, email, phone_number, message } = req.body;
 
   //appInsights.defaultClient.trackEvent({ name: "ContactFormSubmitted", properties: { name, email, phone_number } });

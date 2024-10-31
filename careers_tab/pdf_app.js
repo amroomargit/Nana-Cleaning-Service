@@ -43,7 +43,7 @@ app.post('/upload', upload.single('pdf_File'), async (req, res) => {
 
         const result = await pool.request()
             .input('pdfBase64', mssql.VarBinary, Buffer.from(pdfBase64, 'base64'))
-            .query('INSERT INTO your_table_name (pdf_column_name) VALUES (@pdfBase64)');
+            .query('INSERT INTO PdfSubmissions2 (pdfFile) VALUES (@pdfBase64)');
 
         res.json({ message: 'File uploaded successfully', result });
     } catch (error) {

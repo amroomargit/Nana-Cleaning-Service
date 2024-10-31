@@ -33,6 +33,7 @@ async function connectToDatabase() {
 app.post('/upload', upload.single('pdf_File'), async (req, res) => {
     try {
         if (!req.file) {
+            console.log("No file received");
             return res.status(400).json({ error: 'No file uploaded' });
         }
 
@@ -42,7 +43,8 @@ app.post('/upload', upload.single('pdf_File'), async (req, res) => {
         const pdfBase64 = pdfBuffer.toString('base64'); 
 
         console.log(`PDF size: ${pdfBuffer.length} bytes`);
-
+        console.log("Connecting to the database and attempting to insert");
+        console.log("Pool connected:", pool.connected);
         const result = await pool.request()
             .input('pdfBase64', mssql.VarBinary, Buffer.from(pdfBase64, 'base64'))
             .query('INSERT INTO PdfSubmissions2 (pdfFile) VALUES (@pdfBase64)');

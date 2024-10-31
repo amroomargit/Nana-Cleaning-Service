@@ -1,4 +1,4 @@
-document.getElementById('pdf_Form').addEventListener('submit', function(event){
+/*document.getElementById('pdf_Form').addEventListener('submit', function(event){
     event.preventDefault();
 
     const file_Input = document.getElementById('pdf_File');
@@ -29,4 +29,4 @@ document.getElementById('pdf_Form').addEventListener('submit', function(event){
             });
         });
     });
-});
+});*/

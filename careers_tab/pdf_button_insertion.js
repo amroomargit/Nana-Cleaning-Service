@@ -1,30 +1,28 @@
-document.querySelector('.upload_button').addEventListener('click', function(){
-    const file_Input = document.getElementById('pdf_File');
+const uploadButton = document.querySelector('.upload_button');
+const fileInput = document.getElementById('pdf_File');
 
-    this.disabled = true;
-
-    file_Input.click();
-
-    file_Input.addEventListener('change', () => {
-        this.disabled = false;
-    });
+uploadButton.addEventListener('click', function() {
+    fileInput.click();
 });
 
-document.getElementById('pdf_Form').addEventListener('submit', function(event){
+fileInput.addEventListener('change', function() {
+    uploadButton.disabled = false;
+});
+
+document.getElementById('pdf_Form').addEventListener('submit', function(event) {
     event.preventDefault();
 
     const form_Data = new FormData();
-    const file_Input = document.getElementById('pdf_File');
-    const file = file_Input.files[0];
+    const file = fileInput.files[0];
+    const recaptchaResponse = document.getElementById('g-recaptcha-response').value;
 
-    // const recaptchaResponse = getcaptcha.getResponse();
-    // if(!recaptchaResponse){
-    //     alert('reCaptcha incomplete');
-    //     return;
-    // }
+    if (!recaptchaResponse) {
+        alert('reCaptcha incomplete');
+        return;
+    }
 
     form_Data.append('pdf_File', file);
-    // form_Data.append('g-recaptcha-response', recaptchaResponse);
+    form_Data.append('g-recaptcha-response', recaptchaResponse);
 
     fetch('/upload', {
         method: 'POST',
